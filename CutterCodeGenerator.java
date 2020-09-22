@@ -13,80 +13,31 @@ import java.util.Set;
  * <td colspan="10">Cutter Table</td></th>
  * <tr>
  * <td>First Letter</td>
- * <td>2</td>
- * <td>3</td>
- * <td>4</td>
- * <td>5</td>
- * <td>6</td>
- * <td>7</td>
- * <td>8</td>
- * <td>9</td>
+ * <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
  * </tr>
  * <tr>
  * <td><b>S</b></td>
- * <td>A</td>
- * <td>Ch</td>
- * <td>E</td>
- * <td>HI</td>
- * <td>MNOP</td>
- * <td>T</td>
- * <td>U</td>
- * <td>WXYZ</td>
+ * <td>A</td><td>Ch</td><td>E</td><td>HI</td><td>MNOP</td><td>T</td><td>U</td><td>WXYZ</td>
  * </tr>
  * <tr>
  * <td><b>Qu</b></td>
- * <td></td>
- * <td>A</td>
- * <td>E</td>
- * <td>I</td>
- * <td>O</td>
- * <td>R</td>
- * <td>T</td>
- * <td>Y</td>
+ * <td></td><td>A</td><td>E</td><td>I</td><td>O</td><td>R</td><td>T</td><td>Y</td>
  * </tr>
  * <tr>
  * <td><b>other consonants</b></td>
- * <td></td>
- * <td>A</td>
- * <td>E</td>
- * <td>I</td>
- * <td>O</td>
- * <td>R</td>
- * <td>U</td>
- * <td>Y</td>
+ * <td></td><td>A</td><td>E</td><td>I</td><td>O</td><td>R</td><td>U</td><td>Y</td>
  * </tr>
  * <tr>
  * <td><b>vowels</b></td>
- * <td>B</td>
- * <td>D</td>
- * <td>LM</td>
- * <td>N</td>
- * <td>P</td>
- * <td>R</td>
- * <td>ST</td>
- * <td>UVWXY</td>
+ * <td>B</td><td>D</td><td>LM</td><td>N</td><td>P</td><td>R</td><td>ST</td><td>UVWXY</td>
  * </tr>
  * <tr>
  * <td><b>other, third+ letter</b></td>
- * <td></td>
- * <td>ABCD</td>
- * <td>EFGH</td>
- * <td>IJKL</td>
- * <td>MNO</td>
- * <td>PQRS</td>
- * <td>TUV</td>
- * <td>WXYZ</td>
+ * <td></td><td>ABCD</td><td>EFGH</td><td>IJKL</td><td>MNO</td><td>PQRS</td><td>TUV</td><td>WXYZ</td>
  * </tr>
  * <tr>
  * <td>First Letter</td>
- * <td>2</td>
- * <td>3</td>
- * <td>4</td>
- * <td>5</td>
- * <td>6</td>
- * <td>7</td>
- * <td>8</td>
- * <td>9</td>
+ * <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
  * </tr>
  * </table>
  * Reference <a href=
@@ -274,33 +225,13 @@ public class CutterCodeGenerator
             case "Qu":
                 nbr1 = genForQu( remaining );
                 break;
-            case "B":
-            case "C":
-            case "D":
-            case "F":
-            case "G":
-            case "H":
-            case "J":
-            case "K":
-            case "L":
-            case "M":
-            case "N":
-            case "P":
-            case "Q":
-            case "R":
-            case "T":
-            case "V":
-            case "W":
-            case "X":
-            case "Y":
-            case "Z":
+            case "B": case "C": case "D": case "F": case "G": 
+            case "H": case "J": case "K": case "L": case "M": 
+            case "N": case "P": case "Q": case "R": case "T": 
+            case "V": case "W": case "X": case "Y": case "Z":
                 nbr1 = genForOtherConsonants( remaining );
                 break;
-            case "A":
-            case "E":
-            case "I":
-            case "O":
-            case "U":
+            case "A": case "E": case "I": case "O": case "U":
                 nbr1 = genForVowels( remaining );
                 break;
             default:
@@ -389,50 +320,29 @@ public class CutterCodeGenerator
         String firstChar = text.substring( 0, 1 );
         switch( firstChar.toUpperCase() )
         {
-            case "A":
-            case "B":
-            case "C":
-            case "D":
+            case "A": case "B": case "C": case "D":
                 retVal = "3";
                 break;
-            case "E":
-            case "F":
-            case "G":
-            case "H":
+            case "E": case "F": case "G": case "H":
                 retVal = "4";
                 break;
-            case "I":
-            case "J":
-            case "K":
-            case "L":
+            case "I": case "J": case "K": case "L":
                 retVal = "5";
                 break;
-            case "M":
-            case "N":
-            case "O":
+            case "M": case "N": case "O":
                 retVal = "6";
                 break;
-            case "P":
-            case "Q":
-            case "R":
-            case "S":
+            case "P": case "Q": case "R": case "S":
                 retVal = "7";
                 break;
-            case "T":
-            case "U":
-            case "V":
+            case "T": case "U": case "V":
                 retVal = "8";
                 break;
-            case "W":
-            case "X":
-            case "Y":
-            case "Z":
+            case "W": case "X": case "Y": case "Z":
                 retVal = "9";
                 break;
             default:
-                System.out.printf( "Error finding code for [%s] (remaining text [%s]).\n",
-                                   firstChar.toUpperCase(),
-                                   text );
+                System.out.printf( "Error finding code for [%s] (remaining text [%s]).\n", firstChar.toUpperCase(), text );
                 break;
         }
         return retVal;
@@ -524,14 +434,10 @@ public class CutterCodeGenerator
             case "E":
                 retVal = "4";
                 break;
-            case "H":
-            case "I":
+            case "H": case "I":
                 retVal = "5";
                 break;
-            case "M":
-            case "N":
-            case "O":
-            case "P":
+            case "M": case "N": case "O": case "P":
                 retVal = "6";
                 break;
             case "T":
@@ -539,11 +445,8 @@ public class CutterCodeGenerator
                 break;
             case "U":
                 retVal = "8";
-                break;
-            case "W":
-            case "X":
-            case "Y":
-            case "Z":
+                break; 
+            case "W": case "X": case "Y": case "Z":
                 retVal = "9";
                 break;
             default:
@@ -582,8 +485,7 @@ public class CutterCodeGenerator
             case "D":
                 retVal = "3";
                 break;
-            case "L":
-            case "M":
+            case "L": case "M":
                 retVal = "4";
                 break;
             case "N":
@@ -595,15 +497,10 @@ public class CutterCodeGenerator
             case "R":
                 retVal = "7";
                 break;
-            case "S":
-            case "T":
+            case "S": case "T":
                 retVal = "8";
                 break;
-            case "U":
-            case "V":
-            case "W":
-            case "X":
-            case "Y":
+            case "U": case "V": case "W": case "X": case "Y":
                 retVal = "9";
                 break;
             default:
@@ -671,17 +568,13 @@ public class CutterCodeGenerator
             int charDiff = findFirstCharDiff( lastName1, lastName2 );
             if( lastName1.compareTo( lastName2 ) > 0 ) // Meaning lastName1 comes after lastName2
             {
-                putGeneratedCode( String.format( "%s%s",
-                                                 generatedCode,
-                                                 genForOtherOrThirdLetter( lastName1.substring( charDiff ) ) ), name1 );
+                putGeneratedCode( String.format( "%s%s", generatedCode, genForOtherOrThirdLetter( lastName1.substring( charDiff ) ) ), name1 );
                 putGeneratedCode( generatedCode, name2 );
             }
             else
             {
                 putGeneratedCode( generatedCode, name1 );
-                putGeneratedCode( String.format( "%s%s",
-                                                 generatedCode,
-                                                 genForOtherOrThirdLetter( lastName2.substring( charDiff ) ) ), name2 );
+                putGeneratedCode( String.format( "%s%s", generatedCode, genForOtherOrThirdLetter( lastName2.substring( charDiff ) ) ), name2 );
             }
         }
     }
@@ -702,10 +595,7 @@ public class CutterCodeGenerator
     {
         if( generatedCodes.containsKey( code ) && !generatedCodes.get( code ).equals( name ) )
         {
-            System.out.printf( "Generated code [%s] for [%s] is being replaced with [%s].\n",
-                               code,
-                               generatedCodes.get( code ),
-                               name );
+            System.out.printf( "Generated code [%s] for [%s] is being replaced with [%s].\n", code, generatedCodes.get( code ), name );
         }
         generatedCodes.put( code, name );
     }
@@ -727,9 +617,7 @@ public class CutterCodeGenerator
         generateAll();
         if( expectedCodes.size() != generatedCodes.size() )
         {
-            System.out.printf( "Expected to generate [%d] codes but generated [%d].\n",
-                               expectedCodes.size(),
-                               generatedCodes.size() );
+            System.out.printf( "Expected to generate [%d] codes but generated [%d].\n", expectedCodes.size(), generatedCodes.size() );
             System.out.println( "==================================================" );
         }
         Set<String> expdNameSet = new HashSet<String>( expectedCodes.keySet() );
@@ -738,18 +626,12 @@ public class CutterCodeGenerator
             String name = e.getValue();
             expdNameSet.remove( name );
             boolean codesMatch = e.getKey().equals( expectedCodes.get( name ) );
-            System.out.printf( "%sFor [%s], generated code [%s]%s.\n",
-                               codesMatch ? "" : "ERROR: ",
-                               name,
-                               e.getKey(),
-                               codesMatch ? "" : String.format( ", expected [%s]", expectedCodes.get( name ) ) );
+            System.out.printf( "%sFor [%s], generated code [%s]%s.\n", codesMatch ? "" : "ERROR: ", name, e.getKey(), codesMatch ? "" : String.format( ", expected [%s]", expectedCodes.get( name ) ) );
         }
         System.out.println( "==================================================" );
         if( !expdNameSet.isEmpty() )
         {
-            expdNameSet.stream().forEach( n -> System.out.printf( "No code was generated for [%s], expected [%s].\n",
-                                                                  n,
-                                                                  expectedCodes.get( n ) ) );
+            expdNameSet.stream().forEach( n -> System.out.printf( "No code was generated for [%s], expected [%s].\n", n, expectedCodes.get( n ) ) );
             System.out.println( "==================================================" );
         }
         System.out.println( "Completed generating Cutter codes" );
