@@ -1,0 +1,23 @@
+Generate Cutter codes
+==================================================
+Found duplicate code [S65] generated for [Smith, Tom] and [Smith, Alice].
+Found duplicate code [K56] generated for [Kingsolver, Barbara] and [King, Stephen].
+Comparing [Kingsolver] to [King] results in [6].
+For [Smith, Tom], generated code [S658].
+For [Adams, Douglas], generated code [A33].
+For [Abbott, Bud], generated code [A23].
+For [Quinn, Kate], generated code [Qu56].
+For [Smith, Alice], generated code [S653].
+For [MacLachlan, Patricia], generated code [Mac53].
+For [Kingsolver, Barbara], generated code [K567].
+For [King, Stephen], generated code [K56].
+For [Qian, John], generated code [Q53].
+For [Orwell, George], generated code [O79].
+For [McCarthy, Cormac], generated code [Mc33].
+For [Schlink, Bernhard], generated code [S35].
+For [Sachar, Louis], generated code [S23].
+For [ZZZZZZZ, ZZZZZZZ], generated code [Z99].
+For [Yi, Andrea Scalzo], generated code [Y5].
+For [AaAA, Aaaa], generated code [Aa33].
+==================================================
+Completed generating Cutter codes
